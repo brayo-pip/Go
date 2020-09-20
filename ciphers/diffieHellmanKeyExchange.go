@@ -12,7 +12,6 @@ func main() {
 		that can be communicated over an insecure channel
 		p should ideally be a large prime number but any integer works
 		g should be a small integer, 2,3 works fine
-
 		PS: Note that the secret keys are never send over
 		the network
 	*/
@@ -51,6 +50,7 @@ func main() {
 }
 
 func modularExponentiation(b, e, mod int) int {
+
 	//runs in O(log(n)) where n = e
 	//uses exponentiation by squaring to speed up the process
 	if mod == 1 {
